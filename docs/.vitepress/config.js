@@ -9,8 +9,8 @@ async function config() {
       posts: await postUtil.getPosts(),
       nav: [
         { text: "首页", link: "/" },
-        { text: "归档", link: "/pages/archives" },
-        { text: "标签", link: "/pages/tags" },
+        // { text: "归档", link: "/pages/archives" },
+        { text: "标签", link: "/pages/categories" },
         { text: "关于", link: "/pages/about" },
       ],
     },

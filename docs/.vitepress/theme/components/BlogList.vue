@@ -18,10 +18,13 @@
   </ul>
 </template>
 <script setup lang="ts">
-import { useData } from "vitepress";
-
-const { theme } = useData();
-const { posts } = theme.value;
+// import { useData } from "vitepress";
+// const { theme } = useData();
+// const { posts } = theme.value;
+import { withBase } from "vitepress";
+const props = defineProps({
+  posts: Array,
+});
 </script>
 <style scope>
 ul {
@@ -34,7 +37,7 @@ li {
   padding: 8px 0;
 }
 .date {
-  color: #666666;
+  color: rgb(102, 102, 102);
   font-size: 14px;
   flex-shrink: 0;
   margin-right: 10px;

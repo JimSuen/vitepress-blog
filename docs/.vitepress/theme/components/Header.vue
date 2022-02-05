@@ -1,23 +1,28 @@
 <template>
   <header>
-    <img
+    <img src="../../assets/logo.jpeg" alt="logo" />
+    <!-- <img
       src="https://cdn.jsdelivr.net/gh/JimSuen/picture-library@master/logo.jpg"
       alt="logo"
-    />
+    /> -->
     <nav>
-      <a v-for="menu in menus" :key="menu.name" class="hover-underline">
-        {{ menu.name }}
+      <a
+        v-for="menu in menus"
+        :key="menu.name"
+        class="hover-underline"
+        :href="menu.link"
+      >
+        {{ menu.text }}
       </a>
     </nav>
   </header>
 </template>
 <script setup lang="ts">
-const menus = [
-  { name: "首页" },
-  { name: "归类" },
-  { name: "搜索" },
-  { name: "关于" },
-];
+import { useData, withBase } from "vitepress";
+import { initCategories } from "../../utils/category.js";
+
+const { theme } = useData();
+const menus = theme.value.nav;
 </script>
 <style scope>
 header {

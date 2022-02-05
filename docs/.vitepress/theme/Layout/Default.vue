@@ -1,11 +1,12 @@
 <template>
   <Header></Header>
-  <!-- <Content /> -->
-  <BlogList />
+  <Layout />
 </template>
 <script setup lang="ts">
+import DefaultTheme from "vitepress/theme";
 import Header from "../components/Header.vue";
-import BlogList from "../components/BlogList.vue";
+
+const { Layout } = DefaultTheme;
 </script>
 <style>
 body {

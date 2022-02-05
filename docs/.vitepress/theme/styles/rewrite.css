@@ -1,0 +1,5 @@
+/* 修改 vitepress 默认样式 */
+
+.nav-bar {
+  display: none !important;
+}
