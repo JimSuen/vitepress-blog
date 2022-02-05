@@ -3,6 +3,7 @@ page: true
 title: 标签
 description: Categories
 sidebar: false
+navbar: false
 ---
 
 <script setup>

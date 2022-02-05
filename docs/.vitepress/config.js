@@ -5,7 +5,9 @@ async function config() {
     lang: "zh-CN",
     title: "Jim Suen 's blog",
     description: "Just playing around.",
+    base: "/",
     themeConfig: {
+      sidebar: "",
       posts: await postUtil.getPosts(),
       nav: [
         { text: "首页", link: "/" },

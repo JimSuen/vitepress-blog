@@ -3,7 +3,7 @@ page: true
 date: 2021-06-30
 title: 首页
 sidebar: false
-header: false
+navbar: false
 ---
 
 <script setup>

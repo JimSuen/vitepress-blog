@@ -81,7 +81,7 @@ export default {
 template:
 ```html
 <div v-for="item in ['A', 'B']" :key="item">
-  <Graph :ref="(el) => setGraphRef(el, item)" />
+  <!-- <Graph :ref="(el) => setGraphRef(el, item)" /> -->
 </div>
 ```
 

@@ -3,7 +3,9 @@
     <li v-for="post in posts" :key="post.title">
       <span class="date">{{ post.frontMatter.date }}</span>
       <div class="title">
-        <a class="hover-underline">{{ post.frontMatter.title }}</a>
+        <a class="hover-underline" :href="withBase(post.regularPath)">{{
+          post.frontMatter.title
+        }}</a>
       </div>
       <span class="tags">
         <a
@@ -18,10 +20,8 @@
   </ul>
 </template>
 <script setup lang="ts">
-// import { useData } from "vitepress";
-// const { theme } = useData();
-// const { posts } = theme.value;
 import { withBase } from "vitepress";
+
 const props = defineProps({
   posts: Array,
 });

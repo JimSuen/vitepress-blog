@@ -31,6 +31,7 @@ async function getPosts() {
       return {
         frontMatter: info,
         regularPath: `/${item.replace(".md", ".html")}`,
+        // regularPath: `/${item.replace(".md", ".html").split("docs/")[1]}`,
       };
     })
   );

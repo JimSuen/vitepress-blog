@@ -3,6 +3,7 @@ page: true
 title: 关于我
 description: about
 sidebar: false
+navbar: false
 ---
 
 > Hello 陌生人，欢迎访问 JimSuen's Blog

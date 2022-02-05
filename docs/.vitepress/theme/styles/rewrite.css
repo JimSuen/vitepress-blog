@@ -3,3 +3,12 @@
 .nav-bar {
   display: none !important;
 }
+
+/* 不想在每一个post里加siderbar: false, 暂时没找到如何在所有文章页面中隐藏siderbar, 先用样式控制不显示 */
+aside {
+  display: none !important;
+}
+
+.page {
+  margin-left: 0 !important;
+}
