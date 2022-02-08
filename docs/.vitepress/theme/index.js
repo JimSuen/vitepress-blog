@@ -4,7 +4,7 @@ import BlogList from "./components/BlogList.vue";
 import Categories from "./components/Categories.vue";
 import "./styles/common.css";
 import "./styles/rewrite.css";
-import "./styles/post.css";
+// import "./styles/post.css";
 
 const theme = {
   ...DefaultTheme,

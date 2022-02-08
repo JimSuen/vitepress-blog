@@ -30,8 +30,8 @@ async function getPosts() {
       info.date = convertDate(info.date);
       return {
         frontMatter: info,
-        regularPath: `/${item.replace(".md", ".html")}`,
-        // regularPath: `/${item.replace(".md", ".html").split("docs/")[1]}`,
+        // regularPath: `/${item.replace(".md", ".html")}`,
+        regularPath: `/${item.replace(".md", ".html").split("docs/")[1]}`,
       };
     })
   );
