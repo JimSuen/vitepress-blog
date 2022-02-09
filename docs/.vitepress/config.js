@@ -5,7 +5,7 @@ async function config() {
     lang: "zh-CN",
     title: "Jim Suen 's blog",
     description: "Just playing around.",
-    base: "/",
+    base: "/vitepress-blog/",
     themeConfig: {
       sidebar: "",
       posts: await postUtil.getPosts(),
