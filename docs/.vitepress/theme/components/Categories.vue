@@ -3,13 +3,12 @@
     <span
       @click="toggleTag(key)"
       v-for="(item, key) in data"
-      class="tag hover-underline"
+      :class="['tag', 'hover-underline', { active: selectTag === key }]"
     >
       {{ key }} <small>({{ data[key].length }})</small>
     </span>
   </div>
-  <!-- <div class="header">{{ selectTag }}</div> -->
-  <hr />
+  <hr v-show="selectTag" />
   <BlogList :posts="data[selectTag]" />
 </template>
 
@@ -27,10 +26,14 @@ const toggleTag = (tag: string) => {
 </script>
 <style scope>
 .tag {
-  margin: 0 10px;
+  margin: 0 10px !important;
+  transition: all 0.5s ease;
+}
+.tag.active {
+  zoom: 1.2;
+  font-weight: bold;
 }
 hr {
-  margin: 20px 0;
   opacity: 0.5;
 }
 </style>

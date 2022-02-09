@@ -2,9 +2,9 @@ import DefaultTheme from "vitepress/theme";
 import Default from "./Layout/Default.vue";
 import BlogList from "./components/BlogList.vue";
 import Categories from "./components/Categories.vue";
+import "./styles/post.css";
 import "./styles/common.css";
 import "./styles/rewrite.css";
-// import "./styles/post.css";
 
 const theme = {
   ...DefaultTheme,

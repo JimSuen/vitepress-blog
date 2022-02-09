@@ -1,5 +1,8 @@
 /* 修改 vitepress 默认样式 */
 
+:root {
+  --header-height: 0;
+}
 .nav-bar {
   display: none !important;
 }
@@ -11,4 +14,9 @@ aside {
 
 .page {
   margin-left: 0 !important;
+}
+
+.container {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
