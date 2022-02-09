@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "vitepress dev docs --open",
     "build": "vitepress build docs",
-    "serve": "vitepress serve docs"
+    "serve": "vitepress serve docs",
+    "public": "./scripts/public.sh",
+    "deploy": "./scripts/deploy.sh"
   },
   "author": "",
   "license": "ISC",
