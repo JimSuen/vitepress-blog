@@ -18,7 +18,7 @@ categories: [数据结构]
 
 链表是一组节点组成的集合，每个节点都使用一个对象的引用来指向它的后一个节点。指向另一节点的引用讲做链。
 
-![1](1.png)
+![1](https://cdn.jsdelivr.net/gh/JimSuen/picture-library@master/blog/linked/1.png)
 
 表的尾元素指向了 null 节点，表示链接结束的位置。
 
@@ -26,19 +26,19 @@ categories: [数据结构]
 
 链表的起始点的确定比较麻烦，因此很多链表的实现都会在链表的最前面添加一个特殊的节点，称为 **头节点**，表示链表的头部。进过改造，链表就成了如下的样子：
 
-![2](2.png)
+![2](https://cdn.jsdelivr.net/gh/JimSuen/picture-library@master/blog/linked/2.png)
 
 ### 1.2 插入节点
 
 向链表中**插入一个节点**的效率很高，需要修改它前面的节点(前驱)，使其指向新加入的节点，而将新节点指向原来前驱节点指向的节点即可。
 
-![3](3.png)
+![3](https://cdn.jsdelivr.net/gh/JimSuen/picture-library@master/blog/linked/3.png)
 
 ### 1.3 删除节点
 
 只需将待删节点的前驱节点指向待删节点的后面节点，同时将待删节点指向 null，那么节点就删除成功了。以下删除了 data4.
 
-![4](4.png)
+![4](https://cdn.jsdelivr.net/gh/JimSuen/picture-library@master/blog/linked/4.png)
 
 ## 2. 设计单向链表
 
@@ -138,7 +138,7 @@ function remove(item) {
 
 尽管从链表的头节点遍历链表很简单，但是反过来，从后向前遍历却不容易。我们可以通过给 Node 类增加一个 previous 属性，让其指向前驱节点的链接，这样就形成了双向链表。
 
-![5](5.png)
+![5](https://cdn.jsdelivr.net/gh/JimSuen/picture-library@master/blog/linked/5.png)
 
 此时，向链表插入一个节点就要更改节点的前驱和后继了，但是删除节点的效率提高了，不再需要寻找待删除节点的前驱节点了。
 
@@ -234,7 +234,7 @@ head.next = head;
 
 这种行为会导致链表中每个节点的 next 属性都指向链表的头节点，换句话说，也就是链表的尾节点指向了头节点，形成了一个循环链表。
 
-![6](6.png)
+![6](https://cdn.jsdelivr.net/gh/JimSuen/picture-library@master/blog/linked/6.png)
 
 > **参考资料**
 >
