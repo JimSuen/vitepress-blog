@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div v-for="year in Object.keys(data)">
+    <div v-for="year in Object.keys(data).sort((a, b) => b - a)">
       <div class="year">
         {{ data[year][0].frontMatter.date.split("-")[0] }}
       </div>
