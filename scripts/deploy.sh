@@ -1,4 +1,5 @@
 #!/usr/bin/env sh
+rm /s docs/.vitepress/dist
 yarn run build
 cd docs/.vitepress/dist
 git init
